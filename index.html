@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Rekomendasi Judul Novel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="book"></div>
+        <h1>Sistem Informasi Rekomendasi Judul Novel </h1> 
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Cari Rekomendasi Judul Novel</h2>
+            <form id="novelForm">
+                <label for="genre">Pilih Genre:</label>
+                <select id="genre" name="genre" required>
+                    <option value="" disabled selected>Pilih Genre</option>
+                    <option value="romance">Romansa</option>
+                    <option value="fantasy">Fantasi</option>
+                    <option value="mystery">Misteri</option>
+                    <option value="horror">Horor</option>
+                    <option value="adventure">Petualangan</option>
+                </select>
+                <button type="submit">Dapatkan Rekomendasi</button>
+            </form>
+        </section>
+        <section class="recommendation-section">
+            <h2>Rekomendasi Judul Novel</h2>
+            <ul id="recommendations"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sistem Informasi Rekomendasi Judul Novel</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
